@@ -1,16 +1,64 @@
-# React + Vite
+# Abhishek Kumar | Frontend Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, performance-driven personal portfolio built with **React.js**, **Vite**, and **Vanilla CSS**. This project features a modular, component-based architecture with custom animations and a refined aesthetic.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Component-Based Architecture**: Fully modularized into reusable React components for maintainability.
+- **Premium Animations**:
+  - **Text Splitting**: Character-by-character reveal animations for hero text and section titles.
+  - **Scroll Reveal**: Sections fluidly animate into view using intersection observers.
+  - **Custom Cursor**: A sophisticated ring-and-dot cursor that follows mouse movements.
+- **Project Slider**: Interactive carousel for showcasing selected work with smooth transitions.
+- **AI Chatbot Integration**: Floating action button and dedicated links to an AI-powered assistant.
+- **Environment Variable Support**: Securely manage contact details and external links via `.env`.
+- **Responsive Design**: Fully optimized for and tested on all device sizes.
 
-## React Compiler
+## 🛠️ Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React.js](https://reactjs.org/)
+- **Bundler**: [Vite](https://vitejs.dev/)
+- **Styling**: Vanilla CSS (CSS3)
+- **State Management**: React Hooks (useState, useEffect, useMemo)
+- **Deployment**: Vercel
 
-## Expanding the ESLint configuration
+## 📦 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+/src
+  /components     # Reusable UI components (Nav, Hero, Projects, etc.)
+  /data           # Centralized portfolio data (portfolioData.js)
+  /hooks          # Custom React hooks (useReveal, useCursor)
+  index.css       # Global styles and animation keyframes
+  main.jsx        # Entry point
+```
+
+## ⚙️ Getting Started
+
+### 1. Installation
+
+```bash
+npm install
+```
+
+### 2. Environment Variables
+
+Create a `.env` file in the root directory and add your details:
+
+```env
+VITE_USER_EMAIL=your@email.com
+VITE_USER_PHONE=your-phone
+VITE_USER_LINKEDIN=your-linkedin-handle
+VITE_USER_GITHUB=your-github-handle
+VITE_CHAT_LINK=your-chatbot-url
+```
+
+### 3. Development
+
+```bash
+npm run dev
+```
+
+## 📄 License
+
+© 2026 Abhishek Kumar. Created with ❤️ for a professional frontend showcase.
